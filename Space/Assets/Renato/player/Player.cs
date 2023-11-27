@@ -50,14 +50,14 @@ public class Player : MonoBehaviour
 
     public void damage(int DM)
     {
-        //An.SetBool("Ishit", true);
+        An.SetBool("Ishit", true);
         Health -= DM;
-        //Invoke("RH", 0.5f);
+        Invoke("RH", 0.5f);
         
     }
 
-    //void RH()
-    //{
-       // An.SetBool("Ishit", false);
-    //}
+    void RH()
+    {
+       An.SetBool("Ishit", false);
+    }
 }
