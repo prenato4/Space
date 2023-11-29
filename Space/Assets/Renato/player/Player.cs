@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
     {
         An.SetBool("Ishit", true);
         Health -= DM;
-        Invoke("RH", 0.5f);
+        Invoke("RH", 0.3f);
         
     }
 
@@ -60,4 +60,6 @@ public class Player : MonoBehaviour
     {
        An.SetBool("Ishit", false);
     }
+
+    
 }

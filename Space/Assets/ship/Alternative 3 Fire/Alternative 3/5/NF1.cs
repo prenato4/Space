@@ -1,11 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Fire : MonoBehaviour
+public class NF1 : MonoBehaviour
 {
-
     public float Speed;
     public int damage;
 
@@ -23,21 +21,17 @@ public class Fire : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Rig.velocity = Vector2.up * Speed;
+        Rig.velocity = Vector2.down* Speed;
         Destroy(gameObject, 2f);
     }
 
     private void OnTriggerEnter2D(Collider2D CO )
     {
-        if (CO.gameObject.tag == "enemy")
+        if (CO.gameObject.tag == "Player")
         {
-            CO.GetComponent<ini>().Damage(damage);
+            CO.GetComponent<Player>().damage(damage);
             Destroy(gameObject);
         }
-        if (CO.gameObject.tag == "N1")
-        {
-            CO.GetComponent<N1>().Damage(damage);
-            Destroy(gameObject);
-        }
+        
     }
 }
