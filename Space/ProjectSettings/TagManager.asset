@@ -6,6 +6,9 @@ TagManager:
   tags:
   - enemy
   - N1
+  - N11
+  - N111
+  - N1111
   layers:
   - Default
   - TransparentFX

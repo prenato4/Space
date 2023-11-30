@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NF1 : MonoBehaviour
+public class Fireb2 : MonoBehaviour
 {
     public float Speed;
+   
     public int damage;
 
     public Rigidbody2D Rig;
+   
 
     
     
@@ -15,15 +17,15 @@ public class NF1 : MonoBehaviour
     void Start()
     {
         Rig = GetComponent<Rigidbody2D>();
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         Rig.velocity = Vector2.down* Speed;
-        transform.eulerAngles = new Vector3(0, 0, 180);
-        Destroy(gameObject, 2f);
+        Destroy(gameObject, 6f);
+
     }
 
     private void OnTriggerEnter2D(Collider2D CO )

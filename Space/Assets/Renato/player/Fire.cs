@@ -39,5 +39,20 @@ public class Fire : MonoBehaviour
             CO.GetComponent<N1>().Damage(damage);
             Destroy(gameObject);
         }
+        if (CO.gameObject.tag == "N11")
+        {
+            CO.GetComponent<N11>().Damage(damage);
+            Destroy(gameObject);
+        }
+        if (CO.gameObject.tag == "N111")
+        {
+            CO.GetComponent<N111>().Damage(damage);
+            Destroy(gameObject);
+        }
+        if (CO.gameObject.tag == "N1111")
+        {
+            CO.GetComponent<N1111>().Damage(damage);
+            Destroy(gameObject);
+        }
     }
 }
