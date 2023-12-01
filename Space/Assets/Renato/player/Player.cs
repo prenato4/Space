@@ -19,13 +19,20 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private BoxCollider2D box;
     private Animator An;
-    
+
+
+    private Quaternion UR;
+    private Vector3 UP;
+
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
         An = GetComponent<Animator>();
+        UR = transform.rotation;
+        UP = transform.position;
+
     }
 
     // Update is called once per frame
@@ -63,11 +70,15 @@ public class Player : MonoBehaviour
         {
             float angle = Mathf.Atan2(-horizontalInput, verticalInput) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle);
+            UR = transform.rotation;
+            UP = transform.position;
         }
         else
         {
             rig.velocity = Vector2.zero;
-            transform.rotation = 
+            transform.rotation = UR;
+            transform.position = UP;
+
         }
 
         rig.velocity = direction * Speed;
