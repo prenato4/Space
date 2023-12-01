@@ -85,8 +85,7 @@ public class Player : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F))
         {
-            Instantiate(Fire1, SpawnU.position, SpawnU.rotation);
-            Instantiate(Fire1, SpawnU1.position, SpawnU1.rotation);
+            Fire();
         }
 
     }
@@ -104,5 +103,9 @@ public class Player : MonoBehaviour
        An.SetBool("Ishit", false);
     }
 
-    
+    void Fire()
+    {
+        Instantiate(Fire1, SpawnU.position, SpawnU.rotation);
+        Instantiate(Fire1, SpawnU1.position, SpawnU1.rotation);
+    }
 }
