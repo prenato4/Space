@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Health: 5
   Speed: 3
+  RSpeed: 3
   BP: 0
   Fire1: {fileID: 2316291951488192032, guid: cb6c2223d5b98d2409bdea50aa5972a6, type: 3}
   SpawnU: {fileID: 7902025002736454852}
@@ -209,7 +210,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!1 &7902025003956665255
 GameObject:
   m_ObjectHideFlags: 0
