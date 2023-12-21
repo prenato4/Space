@@ -24,6 +24,13 @@ public class N1 : MonoBehaviour
     public Transform Spawn2;
 
     public GameObject Fire1;
+    
+    
+    
+    public Transform[] patrolPoints;
+    public float moveSpeed = 5f;
+
+    private int currentPatrolIndex = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -41,7 +48,7 @@ public class N1 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Timer += Time.deltaTime;
+        /*Timer += Time.deltaTime;
 
         if (Timer >= Wtimer)
         {
@@ -57,6 +64,15 @@ public class N1 : MonoBehaviour
         else
         {
             Rig.velocity = Vector2.right * speed;
+        }*/
+        
+        // Move towards the current patrol point
+        transform.position = Vector3.MoveTowards(transform.position, patrolPoints[currentPatrolIndex].position, moveSpeed * Time.deltaTime);
+
+        // If the enemy reaches the patrol point, move to the next one
+        if (Vector3.Distance(transform.position, patrolPoints[currentPatrolIndex].position) < 0.1f)
+        {
+            currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
         }
     }
 

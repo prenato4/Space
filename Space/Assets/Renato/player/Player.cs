@@ -39,13 +39,13 @@ public class Player : MonoBehaviour
     void Update()
     {
         //Movimentação na Vertical e Horizontal;
-        /*float MH = Input.GetAxis("Horizontal");
+        float MH = Input.GetAxis("Horizontal");
         float MV = Input.GetAxis("Vertical");
         Vector3 M = new Vector3(MH, MV, 0);
         transform.position += M.normalized * Speed * Time.deltaTime;
 
 
-        Vector3 MP = Input.mousePosition;
+        /*Vector3 MP = Input.mousePosition;
         MP = Camera.main.ScreenToWorldPoint(MP);
 .
         Vector2 D = new Vector2(MP.x - transform.position.x, MP.y - transform.position.y);
@@ -61,7 +61,7 @@ public class Player : MonoBehaviour
         //rig.velocity = P * Speed;
         
         
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        /*float horizontalInput = Input.GetAxisRaw("Horizontal");
         float verticalInput = Input.GetAxisRaw("Vertical");
 
         Vector2 direction = new Vector2(horizontalInput, verticalInput).normalized;
@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
 
         }
 
-        rig.velocity = direction * Speed;
+        rig.velocity = direction * Speed;*/
 
         if (Input.GetKeyDown(KeyCode.F))
         {

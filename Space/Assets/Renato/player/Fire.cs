@@ -61,7 +61,12 @@ public class Fire : MonoBehaviour
             A.SetBool("Ibo", true);
             Destroy(gameObject,0.1f);
         }
-        
+        if (CO.gameObject.tag == "Met")
+        {
+            CO.GetComponent<Drop>().Damage(damage);
+            A.SetBool("Ibo", true);
+            Destroy(gameObject,0.1f);
+        }
         
     }
 }
