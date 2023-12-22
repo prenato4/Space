@@ -10,6 +10,7 @@ TagManager:
   - N111
   - N1111
   - Met
+  - Wall
   layers:
   - Default
   - TransparentFX

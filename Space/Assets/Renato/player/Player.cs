@@ -108,4 +108,15 @@ public class Player : MonoBehaviour
         Instantiate(Fire1, SpawnU.position, SpawnU.rotation);
         Instantiate(Fire1, SpawnU1.position, SpawnU1.rotation);
     }
+
+    public string collisionTag = "Wall";
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.tag == "Wall")
+        {
+            // Impede o jogador de passar por dentro do trigger
+            transform.position = Vector3.MoveTowards(transform.position, other.transform.position, -0.1f);
+        }
+    }
 }
