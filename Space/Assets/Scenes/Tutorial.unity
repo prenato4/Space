@@ -249,6 +249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quad
       objectReference: {fileID: 0}
+    - target: {fileID: 8789539316845940844, guid: 14aadef8ee40b6843b87a34cf10015be, type: 3}
+      propertyPath: ve
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8789539316845940847, guid: 14aadef8ee40b6843b87a34cf10015be, type: 3}
       propertyPath: m_RootOrder
       value: 2
