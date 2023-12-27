@@ -260,7 +260,7 @@ Transform:
   m_GameObject: {fileID: 6886730629697732149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.67, y: 3.9573562, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.43089747, y: 0.43089747, z: 0.43089747}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6886730629254576280}
@@ -363,6 +363,11 @@ MonoBehaviour:
   Spawn1: {fileID: 6886730629254576280}
   Spawn2: {fileID: 6886730629340485795}
   Fire1: {fileID: 6510179443907011346, guid: e3c96acd84cc21a42847559581034e25, type: 3}
+  patrolPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  moveSpeed: 2
 --- !u!50 &6886730629697732147
 Rigidbody2D:
   serializedVersion: 4

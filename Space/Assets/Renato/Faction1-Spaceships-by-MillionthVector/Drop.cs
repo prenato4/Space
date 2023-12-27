@@ -8,10 +8,12 @@ public class Drop : MonoBehaviour
     public float dropChance = 0.5f;
     public int maxHealth = 100;
     private int currentHealth;
+    private Animator An;
 
     void Start()
     {
         currentHealth = maxHealth;
+        An = GetComponent<Animator>();
     }
 
     public void Damage(int damage)
@@ -20,7 +22,8 @@ public class Drop : MonoBehaviour
         if (currentHealth <= 0)
         {
             DropItem();
-            Destroy(gameObject);
+            An.SetBool("h",true);
+            Destroy(gameObject,0.2f);
         }
     }
 

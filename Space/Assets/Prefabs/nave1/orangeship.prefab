@@ -324,7 +324,6 @@ GameObject:
   m_Component:
   - component: {fileID: 517054760778639665}
   - component: {fileID: 517054760778639664}
-  - component: {fileID: 517054760778639667}
   - component: {fileID: 517054760778639666}
   - component: {fileID: 517054760778639669}
   - component: {fileID: 517054760778639668}
@@ -345,7 +344,7 @@ Transform:
   m_GameObject: {fileID: 517054760778639671}
   m_LocalRotation: {x: 0.7071068, y: 0.7071068, z: -0, w: 0}
   m_LocalPosition: {x: -1.39, y: 2.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.54540765, y: 0.54540765, z: 0.54540765}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 517054761487094861}
@@ -411,32 +410,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &517054760778639667
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517054760778639671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25efbf0553b694944a4837fa65c37878, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Health: 10
-  damage: 0
-  speed: 3
-  Timer: 0
-  Wtimer: 6
-  Walk: 0
-  Spawn1: {fileID: 517054760406713843}
-  Spawn2: {fileID: 517054760335064683}
-  Spawn3: {fileID: 517054761036712726}
-  Spawn4: {fileID: 517054761239765618}
-  Fire1: {fileID: 3939534322246038383, guid: 0e663583645c5d641a2c571b19eb2055, type: 3}
-  Fire2: {fileID: 3939534322246038383, guid: 8f6630bebabb0a343a265ca03e8defbc, type: 3}
-  Fire3: {fileID: 3939534322246038383, guid: 473c21db4da2b9f429c88a0cc5a22a19, type: 3}
-  Fire4: {fileID: 3939534322246038383, guid: 0e663583645c5d641a2c571b19eb2055, type: 3}
 --- !u!61 &517054760778639666
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -1,12 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
 
-    public int Health;
+    public float Health;
+    public float MHealth;
 
+    public Image healthBar;
+ 
     public float Speed;
     public float RSpeed;
 
@@ -43,6 +48,8 @@ public class Player : MonoBehaviour
         float MV = Input.GetAxis("Vertical");
         Vector3 M = new Vector3(MH, MV, 0);
         transform.position += M.normalized * Speed * Time.deltaTime;
+        
+        UpdateB();
 
 
         /*Vector3 MP = Input.mousePosition;
@@ -90,6 +97,13 @@ public class Player : MonoBehaviour
 
     }
 
+    private void UpdateB()
+    {
+        healthBar.fillAmount = Health / MHealth;
+    }
+    
+    
+
     public void damage(int DM)
     {
         An.SetBool("Ishit", true);
@@ -118,5 +132,12 @@ public class Player : MonoBehaviour
             // Impede o jogador de passar por dentro do trigger
             transform.position = Vector3.MoveTowards(transform.position, other.transform.position, -0.1f);
         }
+
+        if (other.gameObject.tag == "Met")
+        {
+            An.SetBool("explo", true);
+            Destroy(gameObject, 0.1f);
+        }
     }
+    
 }

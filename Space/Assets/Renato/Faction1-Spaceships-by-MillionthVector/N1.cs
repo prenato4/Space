@@ -24,8 +24,8 @@ public class N1 : MonoBehaviour
     public Transform Spawn2;
 
     public GameObject Fire1;
-    
-    
+
+    public float FireI;
     
     public Transform[] patrolPoints;
     public float moveSpeed = 5f;
@@ -37,7 +37,7 @@ public class N1 : MonoBehaviour
     {
         An = GetComponent<Animator>();
         Rig = GetComponent<Rigidbody2D>();
-        Invoke("StartFire", 3f);
+        Invoke("StartFire", FireI);
     }
 
     // Update is called once per frame
@@ -96,7 +96,7 @@ public class N1 : MonoBehaviour
 
     void StartFire()
     {
-        InvokeRepeating("IFire", 0f, 5f);
+        InvokeRepeating("IFire", 0f, FireI);
     }
     
     

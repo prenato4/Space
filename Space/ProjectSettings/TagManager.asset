@@ -11,6 +11,7 @@ TagManager:
   - N1111
   - Met
   - Wall
+  - met
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - wall
+  - met
   - 
   - 
   - 

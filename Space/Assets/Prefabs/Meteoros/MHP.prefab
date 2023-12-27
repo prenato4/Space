@@ -15,7 +15,8 @@ GameObject:
   - component: {fileID: 3481747414228916607}
   - component: {fileID: 6891237470328530584}
   - component: {fileID: -6965741721273034956}
-  m_Layer: 0
+  - component: {fileID: 400834598}
+  m_Layer: 7
   m_Name: MHP
   m_TagString: Met
   m_Icon: {fileID: 0}
@@ -281,14 +282,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5807758863176923334}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 160f3877c5fb8f848a883f1762bc23da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemsToDrop:
-  - {fileID: 0}
-  dropChance: 0.5
+  - {fileID: 15256426662843179, guid: 301e4e52c50ba004dac78a48f5185427, type: 3}
+  dropChance: 0
   maxHealth: 4
 --- !u!114 &-6965741721273034956
 MonoBehaviour:
@@ -304,3 +305,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotationSpeed: 0
+--- !u!95 &400834598
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5807758863176923334}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8a03f6f3be62e5049bfef4ce57e5d266, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

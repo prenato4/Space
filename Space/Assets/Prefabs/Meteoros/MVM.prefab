@@ -16,7 +16,8 @@ GameObject:
   - component: {fileID: 8859002683921297576}
   - component: {fileID: 4593394999139941266}
   - component: {fileID: -9020378282185428763}
-  m_Layer: 0
+  - component: {fileID: 146805802}
+  m_Layer: 7
   m_Name: MVM
   m_TagString: Met
   m_Icon: {fileID: 0}
@@ -97,13 +98,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7981775855312706259}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 160f3877c5fb8f848a883f1762bc23da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   itemsToDrop:
-  - {fileID: 0}
+  - {fileID: 15256426662843179, guid: 301e4e52c50ba004dac78a48f5185427, type: 3}
   dropChance: 0.1
   maxHealth: 4
 --- !u!50 &2733514790383572947
@@ -307,3 +308,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotationSpeed: 0
+--- !u!95 &146805802
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7981775855312706259}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 286ca00651384dd4ea01b97f3ac80e82, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
