@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 91554877e1a349e40ab64845772a1b61
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Avayx Regular
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 2cd1d88775d10b14b8ed62025d2d3a68, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
