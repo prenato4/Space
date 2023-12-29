@@ -1489,7 +1489,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Galactic Guardian
+  m_text: Galactics Guardians
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 360bbaeed64111240b6066a1d764146d, type: 2}
   m_sharedMaterial: {fileID: -2444968410645376130, guid: 360bbaeed64111240b6066a1d764146d, type: 2}
@@ -1998,7 +1998,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "A 3 Mill, anos atr\xE1s, no in\xEDcio do s\xE9culo XXI, a humanidade testemunhou
+  m_text: "A 3 Mil anos atr\xE1s, no in\xEDcio do s\xE9culo XXI, a humanidade testemunhou
     avan\xE7os tecnol\xF3gicos sem precedentes."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d23ef50d4745da4c86eed6a74109e45, type: 2}
@@ -2570,8 +2570,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "os sobreviventes uniram for\xE7as para construir uma nova sociedade, mas
-    a paz foi interrompida quando naves alien\xEDgenas hostis apareceram nos c\xE9us."
+  m_text: "os sobreviventes uniram for\xE7as para construir uma nova sociedade, e
+    se estabeleceram e evoluiram por 2 s\xE9culos, mas a paz foi interrompida quando
+    naves alien\xEDgenas hostis apareceram nos c\xE9us."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d23ef50d4745da4c86eed6a74109e45, type: 2}
   m_sharedMaterial: {fileID: 5809115574777700257, guid: 8d23ef50d4745da4c86eed6a74109e45, type: 2}
@@ -2800,7 +2801,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Diante desse novo perigo, os l\xEDderes de Nova Esperan\xE7a convocaram
     uma reuni\xE3o de emerg\xEAncia, onde foi decidido que a humanidade precisava
-    se unir e se preparar para enfrentar os perigos do universo. Assim, nasceu a"
+    se unir e se preparar para enfrentar os perigos do universo. Assim, nasceu os"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d23ef50d4745da4c86eed6a74109e45, type: 2}
   m_sharedMaterial: {fileID: 5809115574777700257, guid: 8d23ef50d4745da4c86eed6a74109e45, type: 2}
