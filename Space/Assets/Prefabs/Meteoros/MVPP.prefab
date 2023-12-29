@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4363457049020446915}
   - component: {fileID: 4363457048167991776}
   - component: {fileID: 4363457048167991779}
-  - component: {fileID: 7174507057200033435}
   - component: {fileID: 2800812646371567009}
   - component: {fileID: 7213395299379706108}
   - component: {fileID: 1811048967}
@@ -104,8 +103,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsToDrop:
-  - {fileID: 15256426662843179, guid: 301e4e52c50ba004dac78a48f5185427, type: 3}
-  dropChance: 0
+  - {fileID: 1600936118906442517, guid: a774378642ac2fb4fbee17cb63855564, type: 3}
+  dropChance: 0.5
   maxHealth: 4
 --- !u!50 &4363457048167991776
 Rigidbody2D:
@@ -154,20 +153,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3, y: 1.37}
   m_EdgeRadius: 0
---- !u!114 &7174507057200033435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8621454226957567200}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef43fbcd805e32143991d544fbce0fcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rotationSpeed: 100
 --- !u!68 &2800812646371567009
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -308,6 +293,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotationSpeed: 0
+  MT: 9
+  DD: 0
+  DG1: {fileID: 1186092307118366593, guid: 45e854674bd7dc94a9e42de6882270ec, type: 3}
 --- !u!95 &1811048967
 Animator:
   serializedVersion: 4

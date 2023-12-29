@@ -10,6 +10,11 @@ public class Player : MonoBehaviour
     public float Health;
     public float MHealth;
 
+    public float QM;
+    public static float Q;
+    public Image QQ;
+    
+
     public Image healthBar;
  
     public float Speed;
@@ -25,7 +30,7 @@ public class Player : MonoBehaviour
     private BoxCollider2D box;
     private Animator An;
 
-
+    private Vector3 direction;
     private Quaternion UR;
     private Vector3 UP;
 
@@ -100,6 +105,9 @@ public class Player : MonoBehaviour
     private void UpdateB()
     {
         healthBar.fillAmount = Health / MHealth;
+        QQ.fillAmount = Q / QM;
+
+        
     }
     
     

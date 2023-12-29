@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6009254457181012995}
   - component: {fileID: 1771531085610482067}
-  - component: {fileID: 4950671260811867552}
   - component: {fileID: 8603721395626438780}
   - component: {fileID: 2233086089334998029}
   - component: {fileID: 8146645396154301418}
@@ -90,20 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4950671260811867552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9094290259501082036}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef43fbcd805e32143991d544fbce0fcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  rotationSpeed: 100
 --- !u!68 &8603721395626438780
 EdgeCollider2D:
   m_ObjectHideFlags: 0
@@ -288,7 +273,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsToDrop:
-  - {fileID: 15256426662843179, guid: 301e4e52c50ba004dac78a48f5185427, type: 3}
+  - {fileID: 7410735643645397381, guid: c193347c3c6560c40839c05399fca104, type: 3}
   dropChance: 0.5
   maxHealth: 4
 --- !u!114 &-7037403280656258
@@ -305,6 +290,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 2
   rotationSpeed: 0
+  MT: 9
+  DD: 0
+  DG1: {fileID: 1186092307118366593, guid: 45e854674bd7dc94a9e42de6882270ec, type: 3}
 --- !u!95 &1972505804
 Animator:
   serializedVersion: 4
