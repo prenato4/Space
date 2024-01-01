@@ -13,22 +13,31 @@ public class GameController : MonoBehaviour
     public float spawnInterval = 1f;
     public GameObject DG;
     public GameObject DG1;
+    public GameObject Barra;
+    public GameObject Play;
+    public GameObject Vida;
+    public bool Ex = false;
     
     private void Start()
     {
-        
-        InvokeRepeating("SpawnObject", 17f, spawnInterval);
+        Barra.SetActive(false);
+        Play.SetActive(false);
+        Vida.SetActive(false);
 
-        StartCoroutine(ActivateDG());
+        DG.SetActive(true);
+        Ex = false;
+        
     }
 
     private void Update()
     { 
-        if (Player.Q == 30)
+        if (Player.Q == 30 && !Ex)
         {
+            Play.SetActive(false);
             CancelInvoke("SpawnObject");
             DG1.SetActive(true);
-            
+            Ex = true;
+
         }
     }
     
@@ -44,18 +53,22 @@ public class GameController : MonoBehaviour
         Instantiate(prefab, spawnPoint.position, Quaternion.identity);
     }
     
-    private IEnumerator ActivateDG()
+    public void Cena1()
     {
-        DG.SetActive(true);
-        yield return new WaitForSeconds(13f);
+        
         DG.SetActive(false);
+        Barra.SetActive(true);
+        Play.SetActive(true);
+        Vida.SetActive(true);
+        InvokeRepeating("SpawnObject", 1f, spawnInterval);
         
     }
 
     public void Cena()
     {
         DG1.SetActive(false);
-        InvokeRepeating("SpawnObject", 0f, spawnInterval);
+        Play.SetActive(true);
+        InvokeRepeating("SpawnObject", 0f, 0.5f);
     }
     
     

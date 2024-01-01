@@ -9,23 +9,16 @@ public class N1 : MonoBehaviour
     public int Health;
     public int damage;
     
-    public float speed;
-
-    public float Timer;
-    public float Wtimer;
-
-    public bool Walk;
+    public GameObject tiroPrefab;
+    public Transform[] pontosDeSaida;
+    public float velocidadeDoTiro;
+    
 
     private Animator An;
     private Rigidbody2D Rig;
-
-
-    public Transform Spawn1;
-    public Transform Spawn2;
-
-    public GameObject Fire1;
-
-    public float FireI;
+    
+    
+    
     
     public Transform[] patrolPoints;
     public float moveSpeed = 5f;
@@ -35,9 +28,12 @@ public class N1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        InvokeRepeating("Atirar", 2f,4f);
+        
         An = GetComponent<Animator>();
         Rig = GetComponent<Rigidbody2D>();
-        Invoke("StartFire", FireI);
+        
     }
 
     // Update is called once per frame
@@ -74,6 +70,11 @@ public class N1 : MonoBehaviour
         {
             currentPatrolIndex = (currentPatrolIndex + 1) % patrolPoints.Length;
         }
+
+        
+        
+            
+        
     }
 
     public void Damage(int D)
@@ -92,17 +93,15 @@ public class N1 : MonoBehaviour
     {
         An.SetBool("Ishit", false);
     }
-
-
-    void StartFire()
-    {
-        InvokeRepeating("IFire", 0f, FireI);
-    }
     
     
-    void IFire()
+    void Atirar()
     {
-        Instantiate(Fire1, Spawn1.position, Spawn1.rotation);
-        Instantiate(Fire1, Spawn2.position, Spawn2.rotation);
+        foreach (Transform pontoDeSaida in pontosDeSaida)
+        {
+            GameObject tiro = Instantiate(tiroPrefab, pontoDeSaida.position, pontoDeSaida.rotation);
+            tiro.GetComponent<Rigidbody2D>().velocity = pontoDeSaida.up * velocidadeDoTiro;
+        }
     }
+    
 }

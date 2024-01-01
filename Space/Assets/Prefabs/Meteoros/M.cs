@@ -4,23 +4,37 @@ using UnityEngine;
 
 public class M : MonoBehaviour
 {
-    public float speed = 5f;
+    private Transform player;
+    public float speed = 3f;
     public float rotationSpeed = 100f;
-
-    private Vector3 direction;
 
     private void Start()
     {
-        // Define uma direção de movimento aleatória para o meteoro
-        direction = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f).normalized;
+        
+        
+        
     }
 
     private void Update()
     {
-        // Move o meteoro na direção definida
-        transform.position += direction * speed * Time.deltaTime;
+        transform.Translate(Vector3.down * speed * Time.deltaTime);
 
         // Rotaciona o meteoro em torno do eixo Z
-        transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+        //transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
+
+        if (Player.Q >= 30)
+        {
+            seguirJo();
+        }
+        
+    }
+
+    void seguirJo()
+    {
+        
+            speed = 4f;
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+            transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
+        
     }
 }

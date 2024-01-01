@@ -56,48 +56,14 @@ public class Player : MonoBehaviour
         
         UpdateB();
 
-
-        /*Vector3 MP = Input.mousePosition;
-        MP = Camera.main.ScreenToWorldPoint(MP);
-.
-        Vector2 D = new Vector2(MP.x - transform.position.x, MP.y - transform.position.y);
-        transform.up = D.normalized;
-        //tentaiva de Fazer a rotação, mas usarei para os Inimigos
-        /*float R = Input.GetAxis("Mouse X") * SR;
-        transform.Rotate(0, SR, 0);*/
-
-        //float R = Input.GetAxis("Vertical");
-        //transform.Rotate(Vector3.forward, -R * RSpeed * Time.deltaTime);
-
-        //Vector2 P = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
-        //rig.velocity = P * Speed;
-        
-        
-        /*float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
-
-        Vector2 direction = new Vector2(horizontalInput, verticalInput).normalized;
-
-        if (direction != Vector2.zero)
-        {
-            float angle = Mathf.Atan2(-horizontalInput, verticalInput) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.Euler(0, 0, angle);
-            UR = transform.rotation;
-            UP = transform.position;
-        }
-        else
-        {
-            rig.velocity = Vector2.zero;
-            transform.rotation = UR;
-            transform.position = UP;
-
-        }
-
-        rig.velocity = direction * Speed;*/
-
         if (Input.GetKeyDown(KeyCode.F))
         {
             Fire();
+        }
+
+        if (Player.Q >= 30)
+        {
+            Speed = 5;
         }
 
     }

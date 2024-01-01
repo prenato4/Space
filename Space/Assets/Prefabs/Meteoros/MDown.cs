@@ -38,8 +38,12 @@ public class MDown : MonoBehaviour
         if (Player.Q >= 30 && !DD)
         {
             rotationSpeed = 100;
-            // Define uma direção de movimento aleatória para o meteoro
-            direction = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f).normalized;
+            // Define uma direção de movimento aleatória para o meteoro, exceto para cima
+            do
+            {
+                direction = new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f), 0f).normalized;
+            } while (direction.y > 0); // Repete até que a direção não seja para cima
+            
             DD = true;
         }
         
