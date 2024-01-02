@@ -16,9 +16,9 @@ public class N1 : MonoBehaviour
 
     private Animator An;
     private Rigidbody2D Rig;
-    
-    
-    
+
+
+    public float TempodeTiro;
     
     public Transform[] patrolPoints;
     public float moveSpeed = 5f;
@@ -29,7 +29,7 @@ public class N1 : MonoBehaviour
     void Start()
     {
         
-        InvokeRepeating("Atirar", 2f,4f);
+        InvokeRepeating("Atirar", 2f,TempodeTiro);
         
         An = GetComponent<Animator>();
         Rig = GetComponent<Rigidbody2D>();
