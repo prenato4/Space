@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameMenu : MonoBehaviour
 {
@@ -8,10 +9,11 @@ public class GameMenu : MonoBehaviour
     public GameObject[] prefabs;
     public Transform[] spawnPoints;
     public float spawnInterval = 5f;
+    public float spawnincial = 5f;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnObject", 2f, spawnInterval);
+        InvokeRepeating("SpawnObject", spawnincial, spawnInterval);
     }
 
     // Update is called once per frame
@@ -30,4 +32,10 @@ public class GameMenu : MonoBehaviour
 
         Instantiate(prefab, spawnPoint.position, Quaternion.identity);
     }
+
+    public void Play()
+    {
+        SceneManager.LoadScene("Tutorial 1");
+    }
+    
 }

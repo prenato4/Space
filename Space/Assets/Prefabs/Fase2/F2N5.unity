@@ -170,12 +170,24 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5761125425602101019, guid: 0182fb86262cfa14a8562c378c00f483, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3257177
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761125425602101019, guid: 0182fb86262cfa14a8562c378c00f483, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3257177
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761125425602101019, guid: 0182fb86262cfa14a8562c378c00f483, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3257177
+      objectReference: {fileID: 0}
+    - target: {fileID: 5761125425602101019, guid: 0182fb86262cfa14a8562c378c00f483, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43031883
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5761125425602101019, guid: 0182fb86262cfa14a8562c378c00f483, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.590135
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 5761125425602101019, guid: 0182fb86262cfa14a8562c378c00f483, type: 3}
       propertyPath: m_LocalPosition.z
@@ -229,14 +241,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tiroPrefab: {fileID: 6510179443907011346, guid: 0cab09654672b1440a676709a1b7ac0a, type: 3}
-  pontosDeSaida:
-  - {fileID: 39429693}
-  - {fileID: 1408180206}
-  - {fileID: 768705991}
-  - {fileID: 1137250912}
-  - {fileID: 1908675705}
+  pontosDeSaida: []
   velocidadeDoTiro: 4
   rotationSpeed: 2
+  tempodeintervalo: 0
 --- !u!4 &753271488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5761125425602101019, guid: 0182fb86262cfa14a8562c378c00f483, type: 3}
@@ -364,6 +372,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8789539316845940753, guid: 14aadef8ee40b6843b87a34cf10015be, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ba764193726e69e418bb16dc1b5eb529, type: 2}
     - target: {fileID: 8789539316845940755, guid: 14aadef8ee40b6843b87a34cf10015be, type: 3}
       propertyPath: m_Name
       value: Quad

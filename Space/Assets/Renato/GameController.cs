@@ -13,6 +13,7 @@ public class GameController : MonoBehaviour
     public float spawnInterval = 1f;
     public GameObject DG;
     public GameObject DG1;
+    public GameObject DG2;
     public GameObject Barra;
     public GameObject Play;
     public GameObject Vida;
@@ -38,6 +39,11 @@ public class GameController : MonoBehaviour
             DG1.SetActive(true);
             Ex = true;
 
+        }
+
+        if (Player.Q >= 60)
+        {
+            SceneManager.LoadScene("Tutorial2");
         }
     }
     
@@ -70,6 +76,22 @@ public class GameController : MonoBehaviour
         Play.SetActive(true);
         InvokeRepeating("SpawnObject", 0f, 0.5f);
     }
+
+    public void DG21()
+    {
+        DG2.SetActive(false);
+    }
     
-    
+    public void Restart()
+    {
+        SceneManager.LoadScene("Tutorial 1");
+    }
+
+    public void menu()
+    {
+        SceneManager.LoadScene("Menu");
+    }
+
+
+
 }

@@ -22,7 +22,7 @@ public class M : MonoBehaviour
         // Rotaciona o meteoro em torno do eixo Z
         //transform.Rotate(0f, 0f, rotationSpeed * Time.deltaTime);
 
-        if (Player.Q >= 30)
+        if (Player.Q >= 30 && player != null)
         {
             seguirJo();
         }
@@ -37,4 +37,6 @@ public class M : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, player.position, speed * Time.deltaTime);
         
     }
+    
+    
 }

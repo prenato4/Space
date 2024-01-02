@@ -1159,6 +1159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CP: cutscene
+  DG: {fileID: 0}
 --- !u!1 &524687167
 GameObject:
   m_ObjectHideFlags: 0

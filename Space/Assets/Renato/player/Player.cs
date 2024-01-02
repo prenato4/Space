@@ -9,30 +9,19 @@ public class Player : MonoBehaviour
 
     public float Health;
     public float MHealth;
-
     public float QM;
     public static float Q;
     public Image QQ;
-    
-
+    public GameObject GameOver;
     public Image healthBar;
- 
     public float Speed;
-    public float RSpeed;
-
     public bool BP;
-
     public GameObject Fire1;
-
     public Transform SpawnU;
     public Transform SpawnU1;
     private Rigidbody2D rig;
     private BoxCollider2D box;
     private Animator An;
-
-    private Vector3 direction;
-    private Quaternion UR;
-    private Vector3 UP;
 
     // Start is called before the first frame update
     void Start()
@@ -40,8 +29,7 @@ public class Player : MonoBehaviour
         rig = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
         An = GetComponent<Animator>();
-        UR = transform.rotation;
-        UP = transform.position;
+        GameOver.SetActive(false);
 
     }
 
@@ -61,9 +49,15 @@ public class Player : MonoBehaviour
             Fire();
         }
 
-        if (Player.Q >= 30)
+        if (Q >= 30)
         {
             Speed = 5;
+        }
+
+        if (Health <= 0)
+        {
+            An.SetBool("explo", true);
+            GameOver.SetActive(true); // Ativar o objeto GameOver quando a saúde for zero
         }
 
     }
@@ -83,7 +77,6 @@ public class Player : MonoBehaviour
         An.SetBool("Ishit", true);
         Health -= DM;
         Invoke("RH", 0.3f);
-        
     }
 
     void RH()
@@ -110,8 +103,17 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Met")
         {
             An.SetBool("explo", true);
-            Destroy(gameObject, 0.1f);
+            Health = 0;
+
+        }
+        
+        if (other.gameObject.tag == "N1")
+        {
+            An.SetBool("explo", true);
+            Health = 0;
+
         }
     }
+    
     
 }

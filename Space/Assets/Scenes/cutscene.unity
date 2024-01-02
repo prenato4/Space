@@ -1159,6 +1159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CP: cutscene
+  DG: {fileID: 0}
 --- !u!1 &524687167
 GameObject:
   m_ObjectHideFlags: 0
@@ -3572,7 +3573,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Guardi\xF5es Gal\xE1cticos"
+  m_text: Galactics Guardians
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8d23ef50d4745da4c86eed6a74109e45, type: 2}
   m_sharedMaterial: {fileID: 5809115574777700257, guid: 8d23ef50d4745da4c86eed6a74109e45, type: 2}
