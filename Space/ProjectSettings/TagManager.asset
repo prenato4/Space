@@ -12,6 +12,7 @@ TagManager:
   - Met
   - Wall
   - met
+  - Boss
   layers:
   - Default
   - TransparentFX

@@ -2,16 +2,21 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class N1 : MonoBehaviour
 {
 
-    public int Health;
+    public float Health;
+    public float mHealth;
+    public Image healthBar;
     public int damage;
     
     public GameObject tiroPrefab;
     public Transform[] pontosDeSaida;
     public float velocidadeDoTiro;
+
+    public GameObject Fim;
     
 
     private Animator An;
@@ -19,6 +24,7 @@ public class N1 : MonoBehaviour
 
 
     public float TempodeTiro;
+    public float TempodeInicio;
     
     public Transform[] patrolPoints;
     public float moveSpeed = 5f;
@@ -29,7 +35,7 @@ public class N1 : MonoBehaviour
     void Start()
     {
         
-        InvokeRepeating("Atirar", 2f,TempodeTiro);
+        InvokeRepeating("Atirar", TempodeInicio,TempodeTiro);
         
         An = GetComponent<Animator>();
         Rig = GetComponent<Rigidbody2D>();
@@ -39,7 +45,14 @@ public class N1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateB();
+    }
+    
+    private void UpdateB()
+    {
+        healthBar.fillAmount = Health / mHealth;
+
+
     }
 
     private void FixedUpdate()
@@ -79,12 +92,13 @@ public class N1 : MonoBehaviour
 
     public void Damage(int D)
     {
-        An.SetBool("Ishit", true);
+        //An.SetBool("Ishit", true);
         Health -= D;
         Invoke("RH", 0.3f);
 
         if (Health <= 0)
         {
+            Fim.SetActive(true);
             Destroy(gameObject);
         }
     }

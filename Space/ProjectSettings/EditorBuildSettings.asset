@@ -6,15 +6,51 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/CutScene/cutscene.unity
+    guid: b84992c42c8721341bb50b387e0c3ebc
   - enabled: 1
-    path: Assets/Tutorial 1.unity
+    path: Assets/Cenas/Menu.unity
+    guid: dfadaeae863adbc4499aea6d0f6e1a00
+  - enabled: 1
+    path: Assets/Cenas/Tutorial 1.unity
     guid: 2f90124f3668675489c94782eb414dc0
   - enabled: 1
-    path: Assets/Tutorial2.unity
+    path: Assets/Cenas/Tutorial2.unity
     guid: 879a9be95bc3ce74fa4bb3281247ca8b
   - enabled: 1
-    path: Assets/Menu/Menu.unity
-    guid: dfadaeae863adbc4499aea6d0f6e1a00
+    path: Assets/Cenas/Tutorial3.unity
+    guid: 43587efaf37c4fa4d85a3074f7f2c182
+  - enabled: 1
+    path: Assets/Cenas/Tutorial4.unity
+    guid: a7e59a6de1baaef4aae489ac24d3dd05
+  - enabled: 1
+    path: Assets/Cenas/F1N1.unity
+    guid: e8cca142cff291a469203df07a9bb8e5
+  - enabled: 1
+    path: Assets/Cenas/F1N2.unity
+    guid: f61a819d401e6384d9d8f2488e15f295
+  - enabled: 1
+    path: Assets/Cenas/F1N3.unity
+    guid: 09cf98dbc567c294d86a45f29513b1f8
+  - enabled: 1
+    path: Assets/Cenas/F1N4.unity
+    guid: df7e1a6c1d5c5d842b99aa2b94bcd758
+  - enabled: 1
+    path: Assets/Cenas/F1N5.unity
+    guid: d79144684cd0529429c0decbbe34d099
+  - enabled: 1
+    path: Assets/Cenas/base.unity
+    guid: 2c9a36c16088d094bb57470cb3615c88
+  - enabled: 1
+    path: Assets/Cenas/F4N1.unity
+    guid: df85569fdab3f1245980078bd93d6911
+  - enabled: 1
+    path: Assets/Cenas/F4N2.unity
+    guid: b8a827fbb77de754997fd577ba9ef1f1
+  - enabled: 1
+    path: Assets/Cenas/F4N3.unity
+    guid: af57fe83b8011c14ebdc0a396435e58f
+  - enabled: 1
+    path: Assets/Cenas/Winner.unity
+    guid: 55812242966500b408c13dc10c45fbae
   m_configObjects: {}

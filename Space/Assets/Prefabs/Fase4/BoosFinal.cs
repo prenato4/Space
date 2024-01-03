@@ -2,13 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoosFinal : MonoBehaviour
 {
 
-    public int vidaMaxima = 100;
-    public int vidaAtual; 
-    
+    public float Mhealth;
+    public float health; 
+    public Image healthBar;
+    public GameObject Fim;
     public GameObject tiroPrefab;
     public Transform[] pontosDeSaida;
     public float velocidadeDoTiro;
@@ -23,12 +25,22 @@ public class BoosFinal : MonoBehaviour
 
     void Update()
     {
-        if (vidaAtual <= 0)
+        if (health <= 0)
         {
+            Fim.SetActive(true);
             Destroy(gameObject);
         }
         
         transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime);
+        
+        UpdateB();
+    }
+    
+    private void UpdateB()
+    {
+        healthBar.fillAmount = health / Mhealth;
+
+
     }
 
     void Atirar()
@@ -39,10 +51,10 @@ public class BoosFinal : MonoBehaviour
             tiro.GetComponent<Rigidbody2D>().velocity = pontoDeSaida.up * velocidadeDoTiro;
         }
     }
-    
-    void ReceberDano(int dano)
+
+    public void Damage(int dano)
     {
-        vidaAtual -= dano;
+        health -= dano;
     }
 
     

@@ -31,9 +31,9 @@ public class Fire : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D CO )
     {
-        if (CO.gameObject.tag == "enemy")
+        if (CO.gameObject.tag == "Boss")
         {
-            CO.GetComponent<ini>().Damage(damage);
+            CO.GetComponent<BoosFinal>().Damage(damage);
             A.SetBool("Ibo", true);
             Destroy(gameObject,0.1f);
         }
@@ -43,21 +43,16 @@ public class Fire : MonoBehaviour
             A.SetBool("Ibo", true);
             Destroy(gameObject,0.1f);
         }
-        if (CO.gameObject.tag == "N11")
-        {
-            CO.GetComponent<N11>().Damage(damage);
-            A.SetBool("Ibo", true);
-            Destroy(gameObject,0.1f);
-        }
+        
         if (CO.gameObject.tag == "N111")
         {
-            CO.GetComponent<N111>().Damage(damage);
+            CO.GetComponent<lifess>().Damage(damage);
             A.SetBool("Ibo", true);
             Destroy(gameObject,0.1f);
         }
-        if (CO.gameObject.tag == "N1111")
+        if (CO.gameObject.tag == "N11")
         {
-            CO.GetComponent<N1111>().Damage(damage);
+            CO.GetComponent<BoosFinal>().Damage(damage);
             A.SetBool("Ibo", true);
             Destroy(gameObject,0.1f);
         }
