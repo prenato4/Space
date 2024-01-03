@@ -141,16 +141,16 @@ MonoBehaviour:
   Health: 5
   MHealth: 100
   QM: 100
-  Q: 0
   QQ: {fileID: 0}
-  QA: {fileID: 0}
+  GameOver: {fileID: 0}
   healthBar: {fileID: 0}
   Speed: 3
-  RSpeed: 3
   BP: 0
   Fire1: {fileID: 2316291951488192032, guid: cb6c2223d5b98d2409bdea50aa5972a6, type: 3}
   SpawnU: {fileID: 7902025002736454852}
   SpawnU1: {fileID: 7902025004581932108}
+  Paused: {fileID: 0}
+  Ispaused: 0
   collisionTag: Wall
 --- !u!95 &7902025003225671638
 Animator:

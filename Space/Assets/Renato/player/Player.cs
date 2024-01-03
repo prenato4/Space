@@ -22,10 +22,14 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private BoxCollider2D box;
     private Animator An;
+    public GameObject Paused;
+    public bool Ispaused = false;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+        Time.timeScale = 1;
         rig = GetComponent<Rigidbody2D>();
         box = GetComponent<BoxCollider2D>();
         An = GetComponent<Animator>();
@@ -36,6 +40,8 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        
         //Movimentação na Vertical e Horizontal;
         float MH = Input.GetAxis("Horizontal");
         float MV = Input.GetAxis("Vertical");
@@ -57,9 +63,59 @@ public class Player : MonoBehaviour
         if (Health <= 0)
         {
             An.SetBool("explo", true);
-            GameOver.SetActive(true); // Ativar o objeto GameOver quando a saúde for zero
+            GameOver.SetActive(true);
+            // Ativar o objeto GameOver quando a saúde for zero
         }
 
+        if (GameOver.activeSelf)
+        {
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Time.timeScale = 1;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            paused();
+        }
+
+        if (Paused.activeSelf)
+        {
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+
+
+
+    }
+
+    public void paused()
+    {
+        if (!Ispaused)
+        {
+            Ispaused = true;
+            
+            Paused.SetActive(true);
+        }
+        else
+        {
+            Ispaused = false;
+            
+            Paused.SetActive(false);
+        }
+
+        
+    }
+    
+    public void continu()
+    {
+        Paused.SetActive(false);
+        Time.timeScale = 0;
     }
 
     private void UpdateB()
@@ -108,6 +164,20 @@ public class Player : MonoBehaviour
         }
         
         if (other.gameObject.tag == "N1")
+        {
+            An.SetBool("explo", true);
+            Health = 0;
+
+        }
+        
+        if (other.gameObject.tag == "N11")
+        {
+            An.SetBool("explo", true);
+            Health = 0;
+
+        }
+        
+        if (other.gameObject.tag == "Boss")
         {
             An.SetBool("explo", true);
             Health = 0;

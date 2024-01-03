@@ -129,9 +129,10 @@ GameObject:
   - component: {fileID: 1316672323965799420}
   - component: {fileID: 1316672323965799419}
   - component: {fileID: 1676827772600277879}
+  - component: {fileID: 1066535246}
   m_Layer: 0
   m_Name: F5S4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -279,6 +280,8 @@ MonoBehaviour:
   Fire1: {fileID: 2316291951488192032, guid: cb6c2223d5b98d2409bdea50aa5972a6, type: 3}
   SpawnU: {fileID: 1316672324663443433}
   SpawnU1: {fileID: 1316672323615389710}
+  Paused: {fileID: 0}
+  Ispaused: 0
   collisionTag: Wall
 --- !u!70 &1676827772600277879
 CapsuleCollider2D:
@@ -296,6 +299,26 @@ CapsuleCollider2D:
   m_Offset: {x: -0.00895963, y: -0.01791946}
   m_Size: {x: 0.72649664, y: 2.4978473}
   m_Direction: 0
+--- !u!95 &1066535246
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316672323965799418}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9802a7b88b21fa849ae9f1d1d52744da, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1316672324663443432
 GameObject:
   m_ObjectHideFlags: 0

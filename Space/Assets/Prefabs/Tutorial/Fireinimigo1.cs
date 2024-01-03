@@ -32,7 +32,7 @@ public class Fireinimigo1 : MonoBehaviour
         {
             CO.GetComponent<Player>().damage(damage);
             //A.SetBool("hit", true);
-            Destroy(gameObject, 0.1f);
+            Destroy(gameObject);
         }
     }
 }

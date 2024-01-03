@@ -21,6 +21,7 @@ public class GameController : MonoBehaviour
     
     private void Start()
     {
+        Time.timeScale = 1f;
         Barra.SetActive(false);
         Play.SetActive(false);
         Vida.SetActive(false);
