@@ -579,6 +579,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1855868624}
     - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
+      propertyPath: Health
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
       propertyPath: Paused
       value: 
       objectReference: {fileID: 452792923}
@@ -586,6 +590,10 @@ PrefabInstance:
       propertyPath: SpawnU
       value: 
       objectReference: {fileID: 450834826}
+    - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
+      propertyPath: MHealth
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
       propertyPath: SpawnU1
       value: 
@@ -2513,11 +2521,11 @@ PrefabInstance:
       objectReference: {fileID: 586718371}
     - target: {fileID: 1699209311, guid: a164114dff257d444bc1d1b201e1636e, type: 3}
       propertyPath: health
-      value: 100
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1699209311, guid: a164114dff257d444bc1d1b201e1636e, type: 3}
       propertyPath: Mhealth
-      value: 100
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1699209311, guid: a164114dff257d444bc1d1b201e1636e, type: 3}
       propertyPath: healthBar
@@ -2533,7 +2541,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1699209311, guid: a164114dff257d444bc1d1b201e1636e, type: 3}
       propertyPath: tempodeintervalo
-      value: 4
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1699209311, guid: a164114dff257d444bc1d1b201e1636e, type: 3}
+      propertyPath: velocidadeDoTiro
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3381316112138845946, guid: a164114dff257d444bc1d1b201e1636e, type: 3}
       propertyPath: m_RootOrder

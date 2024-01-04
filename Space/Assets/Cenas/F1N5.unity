@@ -179,6 +179,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1754876333}
     - target: {fileID: 7902025003225671641, guid: 223ce936d1cdbdb41842cc15d8aa88fb, type: 3}
+      propertyPath: Health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7902025003225671641, guid: 223ce936d1cdbdb41842cc15d8aa88fb, type: 3}
       propertyPath: Paused
       value: 
       objectReference: {fileID: 772644359}
@@ -859,18 +863,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e68fc7215f0d8be47bad9058eaa8c75d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mhealth: 100
-  health: 100
+  Mhealth: 350
+  health: 350
   healthBar: {fileID: 1754876332}
   Fim: {fileID: 588037847}
-  tiroPrefab: {fileID: 481533710681824449, guid: 0ce999ee0a17f3143a5d915b9bb727eb, type: 3}
+  tiroPrefab: {fileID: 481533710681824449, guid: 305db35fdc5a40f498053b49125d957c, type: 3}
   pontosDeSaida:
   - {fileID: 339587156}
   - {fileID: 813206267}
   - {fileID: 1697238348}
   - {fileID: 791482401}
   - {fileID: 1347323388}
-  velocidadeDoTiro: 5
+  velocidadeDoTiro: 8
   rotationSpeed: 50
   tempodeintervalo: 2
   tempodeINCIO: 2

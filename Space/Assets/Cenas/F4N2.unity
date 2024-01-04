@@ -269,23 +269,35 @@ PrefabInstance:
       objectReference: {fileID: 1649853532}
     - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
       propertyPath: health
-      value: 100
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
       propertyPath: Mhealth
-      value: 100
+      value: 450
       objectReference: {fileID: 0}
     - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1013973984}
     - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
+      propertyPath: tiroPrefab
+      value: 
+      objectReference: {fileID: 6510179443907011346, guid: d5e59ec0d409667408103f9993b79a94, type: 3}
+    - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
       propertyPath: tempodeINCIO
-      value: 7
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
+      propertyPath: rotationSpeed
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
       propertyPath: tempodeintervalo
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 317569745, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
+      propertyPath: velocidadeDoTiro
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2496063106006339070, guid: f5265182e243e7a4890ea105b0b200fa, type: 3}
       propertyPath: m_RootOrder
@@ -593,6 +605,11 @@ PrefabInstance:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1785857972446534885, guid: eedbf99a002dc504d8bd9719f28ef9b5, type: 3}
   m_PrefabInstance: {fileID: 421498559}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &595015314 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4126798026077038459, guid: e768d4ac302dae542a59795575bffd72, type: 3}
+  m_PrefabInstance: {fileID: 940981942}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &786271211
 GameObject:
@@ -1311,8 +1328,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1165431820}
     - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
+      propertyPath: Health
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
       propertyPath: Paused
       value: 
+      objectReference: {fileID: 595015314}
+    - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
+      propertyPath: MHealth
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
       propertyPath: GameOver

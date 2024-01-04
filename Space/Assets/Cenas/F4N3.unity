@@ -1640,11 +1640,11 @@ PrefabInstance:
       objectReference: {fileID: 380141703}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: health
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: Mhealth
-      value: 100
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: healthBar
@@ -1655,12 +1655,16 @@ PrefabInstance:
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
+      propertyPath: tiroPrefab
+      value: 
+      objectReference: {fileID: 6510179443907011346, guid: 2ac8c8abefcf0b44d9afeb1f1651deec, type: 3}
+    - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: tempodeINCIO
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: rotationSpeed
-      value: 400
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: tempodeintervalo
@@ -2830,9 +2834,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1926535582}
     - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
+      propertyPath: Health
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
       propertyPath: Paused
       value: 
       objectReference: {fileID: 544336652}
+    - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
+      propertyPath: MHealth
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 1316672323965799419, guid: 7536dd6870882bd448071df4459411f2, type: 3}
       propertyPath: GameOver
       value: 

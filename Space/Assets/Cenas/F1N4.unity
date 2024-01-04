@@ -1526,6 +1526,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 631561318}
     - target: {fileID: 7902025003225671641, guid: 223ce936d1cdbdb41842cc15d8aa88fb, type: 3}
+      propertyPath: Health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7902025003225671641, guid: 223ce936d1cdbdb41842cc15d8aa88fb, type: 3}
       propertyPath: Paused
       value: 
       objectReference: {fileID: 1937641841}
@@ -1947,11 +1951,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89942f8386ff2e646be0a1ea7d9b5e04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 100
-  mHealth: 100
+  Health: 300
+  mHealth: 300
   healthBar: {fileID: 1906035617}
-  damage: 0
-  tiroPrefab: {fileID: 481533710681824449, guid: 0ce999ee0a17f3143a5d915b9bb727eb, type: 3}
+  damage: 1000
+  tiroPrefab: {fileID: 481533710681824449, guid: ef930570f30911249933b92414e62950, type: 3}
   pontosDeSaida:
   - {fileID: 475409408}
   velocidadeDoTiro: 8
@@ -1961,7 +1965,7 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 757076597}
   - {fileID: 757076596}
-  moveSpeed: 3
+  moveSpeed: 5
 --- !u!95 &1685633765
 Animator:
   serializedVersion: 4
