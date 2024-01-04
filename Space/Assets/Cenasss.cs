@@ -103,6 +103,11 @@ public class Cenasss : MonoBehaviour
     {
         Application.Quit();
     }
+
+    
+    
+    
+    
     
     
     

@@ -1656,15 +1656,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: tempodeINCIO
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: rotationSpeed
-      value: 200
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: tempodeintervalo
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1396012420, guid: 3218a2155f6bfaa4d832874df34e1b28, type: 3}
       propertyPath: velocidadeDoTiro
